@@ -1,0 +1,36 @@
+{
+  "name": "ads",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "time": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "img": {
+      "type": "string"
+    },
+    "show": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

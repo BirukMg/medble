@@ -1,0 +1,42 @@
+{
+  "name": "educationalinformation",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "study_program": {
+      "type": "string",
+      "required": true
+    },
+    "institution": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "start_date": {
+      "type": "string",
+      "required": true
+    },
+    "end_date": {
+      "type": "string",
+      "required": true
+    },
+    "gpa": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

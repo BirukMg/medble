@@ -1,0 +1,102 @@
+{
+  "name": "post",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "main_category": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "price_type": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "condition": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string",
+      "default": null
+    },
+    "show": {
+      "type": "boolean",
+      "default": true
+    },
+    "showbyadmin": {
+      "type": "boolean",
+      "default": true
+    },
+    "view": {
+      "type": "number",
+      "default": 0
+    },
+    "post_date": {
+      "type": "string",
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {
+    "employments": {
+      "type": "hasOne",
+      "model": "employment",
+      "foreignKey": "post_id"
+    },
+    "events": {
+      "type": "hasOne",
+      "model": "event",
+      "foreignKey": "post_id"
+    },
+    "houses": {
+      "type": "hasOne",
+      "model": "house",
+      "foreignKey": "post_id"
+    },
+    "vehicles": {
+      "type": "hasOne",
+      "model": "vehicle",
+      "foreignKey": "post_id"
+    },
+    "comments": {
+      "type": "hasMany",
+      "model": "comment",
+      "foreignKey": "post_id"
+    },
+    "requests": {
+      "type": "hasMany",
+      "model": "request",
+      "foreignKey": "post_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

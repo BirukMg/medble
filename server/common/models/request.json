@@ -1,0 +1,38 @@
+{
+  "name": "request",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "owner_id": {
+      "type": "number"
+    },
+    "date": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "default": "pendding"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "account": {
+      "type": "belongsTo",
+      "model": "account",
+      "foreignKey": "account_id"
+    },
+    "post": {
+      "type": "belongsTo",
+      "model": "post",
+      "foreignKey": "post_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

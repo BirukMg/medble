@@ -1,0 +1,126 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "container": {
+    "dataSource": "file",
+    "public": true
+  },
+  "post": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "vehicle": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "house": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "event": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "employment": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "resume": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "educational_information": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "experience_information": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "skill": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "interest": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "account": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "medbleuser": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "some": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "educationalinformation": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "experienceinformation": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "comment": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "request": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "tempaccount": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "ads": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "admin": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "permmision": {
+    "dataSource": "mysql",
+    "public": true
+  }
+}

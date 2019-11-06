@@ -1,0 +1,30 @@
+{
+  "name": "house",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "bedroom": {
+      "type": "number",
+      "required": true
+    },
+    "bathroom": {
+      "type": "number",
+      "required": true
+    },
+    "kitchin": {
+      "type": "number",
+      "required": true
+    },
+    "square_footage": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

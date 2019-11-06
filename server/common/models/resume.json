@@ -1,0 +1,74 @@
+{
+  "name": "resume",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "phone_number": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "about": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "img": {
+      "type": "string",
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {
+    "interests": {
+      "type": "hasMany",
+      "model": "interest",
+      "foreignKey": "resume_id"
+    },
+    "skills": {
+      "type": "hasMany",
+      "model": "skill",
+      "foreignKey": "resume_id"
+    },
+    "educationalinformations": {
+      "type": "hasMany",
+      "model": "educationalinformation",
+      "foreignKey": "resume_id"
+    },
+    "experienceinformations": {
+      "type": "hasMany",
+      "model": "experienceinformation",
+      "foreignKey": "resume_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

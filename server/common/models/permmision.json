@@ -1,0 +1,27 @@
+{
+  "name": "permmision",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "user": {
+      "type": "boolean"
+    },
+    "post": {
+      "type": "boolean"
+    },
+    "ads": {
+      "type": "boolean"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

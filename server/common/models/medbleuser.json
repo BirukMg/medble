@@ -1,0 +1,24 @@
+{
+  "name": "medbleuser",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "socialId": {
+      "type": "string",
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {
+    "accounts": {
+      "type": "hasOne",
+      "model": "account",
+      "foreignKey": "medbleuser_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

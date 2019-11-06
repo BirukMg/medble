@@ -1,0 +1,23 @@
+{
+  "name": "comment",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "comment": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "number"
+    },
+    "date": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
